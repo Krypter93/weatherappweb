@@ -9,7 +9,7 @@ let wind = document.querySelector(".wind");
 
 //Fetching function
 function data(resp){
-    fetch(`http://api.weatherapi.com/v1/current.json?key=48b6a4da649f4320b2e33045232312&q=${resp}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=48b6a4da649f4320b2e33045232312&q=${resp}`)
     .then(response => response.json())
     .then(data => {
         forecast.textContent = `Current Temperature in Celsius: ${data.current.temp_c} ºC`;

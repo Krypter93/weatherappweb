@@ -16,7 +16,7 @@ function data(resp) {
     .then((response) => response.json())
     .then((data) => {
       forecast.textContent = `Current Temperature in Celsius: ${data.current.temp_c} ºC`;
-      farenheit.textContent = `Current Temperature in Celsius: ${data.current.temp_f} ºF`;
+      farenheit.textContent = `Current Temperature in Fahrenheit: ${data.current.temp_f} ºF`;
       country.textContent = `Country: ${data.location.country}`;
       condition.textContent = `Condition: ${data.current.condition.text}`;
       humidity.textContent = `Humidity: ${data.current.humidity}`;

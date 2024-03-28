@@ -1,65 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header h1{
-    text-align: center;
-    margin-top: 0px;
-    height: 100px;
-    background-color:rgb(77, 77, 214);
-    font-family: 'Bebas Neue', sans-serif;
+header h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 0px;
+  height: 100px;
+  background-color: #5755fe;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-header .image{
-    text-align: center;
-    margin-top: 20px;
+h1 {
+  padding: 20px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-h1{
-    padding: 20px;
-    font-size: 50px;
-    color: white;
+header .image {
+  text-align: center;
+  margin-top: 20px;
 }
 
-
-body{
-    background-color:rgb(215, 215, 213);
+body {
+  background-color: #eeeeee;
 }
 
-
-.container #input-info{ 
-    text-align: center;
-    margin-top: 50px;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-#input-info #input{
-    padding: 5px;
-    border-radius: 5px;
-    width: 200px;
-    height: 30px;
+#input-info #input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
 }
 
-#input-info button{
-    margin: 10px;
-    height: 30px;
-    border-radius: 5px;
-    width: 89px;
+#input {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  background-color: #fff7fc;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#input-info button:hover{
-    background-color: rgb(77, 77, 214);
-    color: white;
+button {
+  margin: 50px 10px;
+  height: 30px;
+  border-radius: 5px;
+  width: 89px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease;
 }
 
-.container .forecast{
-    margin-top: 20px;
-    text-align: center;
-    
+button:hover {
+  background-color: #5755fe;
+  color: white;
 }
 
+.data {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid darkblue;
+  background-color: #5755fe;
+  color: white;
+  width: fit-content;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  line-height: 2;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  visibility: hidden;
+}
 
-
+.active {
+  visibility: visible;
+}

@@ -1,4 +1,4 @@
-#Weather App ☀ ☁️ 🌧️ 
+# Weather App ☀ ☁️ 🌧️ 
 
 A basic Web Based Weather App using HTML, CSS, Javascript and consuming API´s.
 

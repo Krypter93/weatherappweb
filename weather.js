@@ -9,6 +9,7 @@ const wind = document.querySelector(".wind");
 const data_wrap = document.querySelector(".data");
 const image = document.querySelector("img")
 const mainTitle = document.querySelector("h1")
+const placeEffect = document.querySelector(".placeholder")
 
 
 
@@ -49,6 +50,9 @@ try {
 	const response = await fetch(url, options);
 	const result = await response.json();
   image.src = `${result.results[1].image}`
+
+  placeEffect.style.visibility = "hidden"
+  image.style.visibility = "visible"
 } catch (error) {
 	console.error(error);
 }
@@ -63,6 +67,9 @@ button.addEventListener("click", () => {
   if (!input) {
     alert("Missing data");
   }
+
+  image.style.visibility = "hidden"
+  placeEffect.style.visibility = "visible"
 
   cityImage()
   data(input);

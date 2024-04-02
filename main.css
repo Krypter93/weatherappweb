@@ -25,16 +25,34 @@ h1 {
   cursor: pointer;
 }
 
+header .image {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+
 img {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 5px;
-  transition: 0.3s ease-in;
+  position: relative;
+  margin-top: 10px;
 }
 
-header .image {
-  text-align: center;
-  margin-top: 20px;
+
+
+.placeholder {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 5px;
+  animation: placeholder 3s infinite;
+  visibility: hidden;
 }
 
 body {
@@ -44,7 +62,8 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  margin-top: -40px;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 #input-info #input {
@@ -88,7 +107,7 @@ button:hover {
   width: fit-content;
   border-radius: 5px;
   margin: 0 auto;
-  margin-top: -20px;
+  margin-top: -40px;
   padding: 10px 20px;
   letter-spacing: 2px;
   line-height: 1.5;
@@ -105,6 +124,20 @@ button:hover {
 
 .active {
   visibility: visible;
+}
+
+@keyframes placeholder {
+  0%{
+    background-color: #ccc;
+  }
+
+  50%{
+    background-color: #eee;
+  }
+
+  100%{
+    background-color: #ccc;
+  }
 }
 
 @media screen and (max-width: 768px) {
